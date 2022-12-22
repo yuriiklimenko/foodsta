@@ -1,0 +1,129 @@
+.hero {
+    position: relative;
+    
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 50px;
+
+        height: 369px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+
+        height: 469px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 159px;
+
+        height: 608px;    
+    }
+
+}
+
+.hero__title { 
+    margin-bottom: 28px;
+     
+    @media screen and (min-width: 768px) {
+        margin-bottom: 44px;
+
+        width: 537px;
+
+        } 
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 28px;
+
+        width: 502px;
+
+        font-size: 48px;
+        }
+}
+
+.hero__descr {
+    margin-bottom: 28px;
+    
+    line-height: 1.50;    
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+
+        width: 336px;
+
+    }
+    @media screen and (min-width: 1280px) {
+        width: 502px;
+    }
+}
+
+.hero__button {
+    @include button("hero", "fill");
+
+}
+.swiper-container {
+    z-index: 0;
+    position: absolute;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        top: 149px;
+        right: 40px;
+
+        width: 320px;
+        height: 320px;
+    }
+    @media screen and (min-width: 1280px) {
+        top: 14px;
+        right: 30px;
+
+        width: 580px;
+        height: 580px;
+    }
+}
+.swiper {
+    background: $background-color;
+
+    transition: border-color $animations;
+
+    @media screen and (min-width: 768px) {
+
+        border: 14px solid $second-background-color;
+    }
+    @media screen and (min-width: 1280px) {
+
+        border: 26px solid $second-background-color;
+    }
+
+    &:hover {
+        border-color: $main-active-color;
+    }
+
+    border-radius: 50%;
+    
+    overflow: hidden;
+}
+
+.swiper-button-prev {
+    @extend %swiper-button;
+    left: 0;
+
+    transform: translate(-30%, -50%);
+
+}
+
+.swiper-button-next {
+    @extend %swiper-button;
+    right: 0;
+
+    transform: translate(30%, -50%);
+}
+
+.swiper-button-left {
+    @extend %swiper-button-icon;
+}
+
+.swiper-button-right {
+    @extend %swiper-button-icon;
+
+    transform: rotateY(180deg);
+}
+

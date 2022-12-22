@@ -1,0 +1,195 @@
+.footer {
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  width: unset;
+  padding-bottom: 0;
+
+}
+
+.footer__bg {
+  padding-bottom: 60px;
+  background-image: url('../images/footer/bottom-mob.png'),
+    url('../images/footer/apple-mob.png'),
+    url('../images/footer/orange-mob.png');
+  background-position: center bottom, left 26%, right top;
+  background-size: 253px 66px, 110px 116px, 104px 259px;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/footer/bottom-mob@2x.png'),
+      url('../images/footer/apple-mob@2x.png'),
+      url('../images/footer/orange-mob@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 506px;
+    background-image: url('../images/footer/bottom-tab.png'),
+      url('../images/footer/apple-tab.png'),
+      url('../images/footer/orange-tab.png'),
+      url('../images/footer/orange-bottom-tab.png');
+    background-position: center bottom, right bottom, right top, bottom left;
+    background-size: 785px 506px, 170px 69px, 203px 365px, 184px 62px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/footer/bottom-tab@2x.png'),
+        url('../images/footer/apple-tab@2x.png'),
+        url('../images/footer/orange-tab@2x.png'),
+        url('../images/footer/orange-bottom-tab@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-height: 395px;
+    background-image: url('../images/footer/bg-desk.png');
+    background-position: center bottom;
+    background-size: 1211px 266px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/footer/bg-desk@2x.png');
+    }
+  }
+}
+
+.footer__top {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 82px;
+
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 480px) {
+    // margin-bottom: 40px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    gap: 114px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 145px;
+  }
+}
+
+.footer-nav__list {
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 767.5px) {
+    // gap: 20px;
+  }
+}
+
+.footer-nav__link {
+  // padding: 0;
+}
+
+.footer-nev__link.nav__link {
+  padding: 10px;
+}
+
+.footer-subscribe {
+  margin-left: auto;
+
+  @media screen and (min-width: 480px) and (max-width: 767.5px) {
+    max-width: 279px;
+    margin: 0 auto;
+  }
+}
+
+.footer-subscribe__capture {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-subscribe__privacy {
+  font-size: 10px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.footer-subscribe__privacy a {
+  color: $main-color;
+  text-decoration: underline;
+}
+
+// bottom
+.footer__bottom {
+  margin-bottom: auto;
+}
+
+.terms {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.terms__list {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 38px;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+}
+
+.terms__link {
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: $main-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.terms__copy {
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}

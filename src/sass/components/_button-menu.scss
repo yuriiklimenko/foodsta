@@ -1,0 +1,26 @@
+.button-menu {
+  // position: absolute;
+  margin-left: auto;
+  // margin-left: 100px;
+
+  // text-align: center;
+  // font-family: inherit;
+  // font-size: 16px;
+  cursor: pointer;
+  // border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  fill: $main-color;
+
+  transition: fill $animations;
+
+  &:active {
+    fill: $second-background-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+
+  }
+
+}

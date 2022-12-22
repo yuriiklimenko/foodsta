@@ -1,0 +1,27 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: $main-background-color;
+
+
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1.17;
+    // overflow: hidden;
+    // overflow-y: visible;
+    // overflow-x: hidden;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  @media screen and (max-width: 767px) {
+    // overflow: hidden;
+  }
+}

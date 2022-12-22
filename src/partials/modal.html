@@ -1,0 +1,44 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-button" aria-label="Close" data-modal-close>
+      <svg width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="form-subscribe form-subscribe__modal" autocomplete="off" novalidate>
+      <p class="form-subscribe__title">Order Form</p>
+      <!-- <div class="form-subscribe__field"> -->
+      <label for="name" class="form-subscribe__label">Name</label>
+      <input type="text" class="form-subscribe__input form-subscribe__input--modal" name="name" id="name"
+        placeholder="Your name" minlength="3" maxlength="25" required />
+      <div class="form-subscribe__warning warning">
+        <svg class="warning__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-warning"></use>
+        </svg>
+        <span class="warning-text">The name must be between 3 and 25 characters</span>
+      </div>
+      <!-- <div class="form-subscribe__field"> -->
+      <label class="form-subscribe__label " for="phone">Phone number</label>
+      <!-- <input type="tel" class="form-subscribe__input" name="phone" id="phone" placeholder="+0__ ___ __  _" /> -->
+      <input class="form-subscribe__input form-subscribe__input--modal" name="phone" type="tel" id="phone"
+        placeholder="050 111 22 33" title="050 111 22 33" pattern="\d{3}[\s]\d{3}[\s]\d{2}[\s]\d{2}" required />
+      <div class="form-subscribe__warning warning">
+        <svg class="warning__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-warning"></use>
+        </svg>
+        <span class="warning-text">This phone must be in the format 099 000 00 00</span>
+      </div>
+
+      <label class="form-subscribe__label" for="email">E-mail</label>
+      <input type="email" class="form-subscribe__input form-subscribe__input--modal" name="email" id="email"
+        placeholder="example@gmail.com" required />
+      <div class="form-subscribe__warning warning">
+        <svg class="warning__icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-warning"></use>
+        </svg>
+        <span class="warning-text">Not a valid email address (example@email.com)</span>
+      </div>
+      <button type="submit" class="form-subscribe__btn form-subscribe__btn--modal">Send</button>
+    </form>
+  </div>
+</div>
